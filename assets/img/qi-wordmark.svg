@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" aria-hidden="true">
+  <!-- Q (Qi logo) -->
+  <circle cx="50" cy="50" r="36" fill="none" stroke="currentColor" stroke-width="12"/>
+  <circle cx="50" cy="50" r="9" fill="currentColor"/>
+  <line x1="68" y1="68" x2="92" y2="92" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+  <!-- i -->
+  <circle cx="130" cy="20" r="8" fill="currentColor"/>
+  <rect x="122" y="34" width="16" height="56" rx="4" fill="currentColor"/>
+  <!-- Mark on right -->
+  <circle cx="200" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="10"/>
+  <circle cx="200" cy="50" r="7" fill="currentColor"/>
+  <line x1="215" y1="65" x2="240" y2="90" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+</svg>

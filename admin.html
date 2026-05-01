@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Brand Settings — Qi Brand Center</title>
+<meta name="description" content="Admin panel for the Brand Rule Engine — define every brand rule (colors, logo, typography, voice, platforms) without code. Versioned, multi-brand, instant validation." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="icon" type="image/svg+xml" href="assets/img/qi-icon.svg" />
+</head>
+<body>
+
+<!-- ===================== FLOATING DOCK NAV ===================== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="Qi Brand Center home">
+      <span class="qi-logo" style="color:var(--qi-yellow)"><svg viewBox="0 0 100 100" width="28" height="28"><g fill="currentColor" transform="translate(0 -2) scale(.20887)"><path d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></g></svg></span>
+      <span class="brand-text">Qi Brand</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-link" href="index.html">Home</a>
+      <div class="has-dropdown">
+        <a class="nav-link" href="identity.html">Identity <span class="chev">▾</span></a>
+        <div class="dropdown" role="menu">
+          <a href="identity.html"><span class="swatch" style="background:#000"></span> Brandmark</a>
+          <a href="color.html"><span class="swatch" style="background:#F2CD00"></span> Color</a>
+          <a href="typography.html"><span class="swatch" style="background:#0A0A0A"></span> Typography</a>
+          <a href="iconography.html"><span class="swatch" style="background:#00BFB3"></span> Iconography</a>
+          <a href="imagery.html"><span class="swatch" style="background:#0891B2"></span> Imagery</a>
+          <a href="graphic-device.html"><span class="swatch" style="background:#FFE76A"></span> Graphic Device</a>
+          <a href="layout.html"><span class="swatch" style="background:#EDEAE0"></span> Grids &amp; Layout</a>
+        </div>
+      </div>
+      <a class="nav-link" href="voice.html">Voice</a>
+      <a class="nav-link" href="applications.html">Apps</a>
+      <a class="nav-link" href="compliance.html">Compliance</a>
+      <a class="nav-link active" href="admin.html">Brand&nbsp;Settings</a>
+      <a class="nav-link" href="downloads.html">Downloads</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn" data-search-open aria-label="Search (⌘K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle theme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+      <a class="nav-cta" href="compliance.html">Run audit</a>
+      <button class="icon-btn menu-toggle" data-menu-toggle aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== ADMIN HEADER ===================== -->
+<section class="container page-head reveal" style="grid-template-columns:1fr;padding-bottom:24px">
+  <div>
+    <div class="crumbs"><a href="index.html">Brand Center</a> / <a href="compliance.html">Compliance Agent</a> / Brand Settings</div>
+    <div class="row" style="gap:8px;margin-top:8px">
+      <span class="eyebrow">Section 13 — Rule Engine</span>
+      <span class="ai-badge"><span class="ai-pulse"></span> Admin · multi-brand · versioned</span>
+    </div>
+    <h1 class="h-display mt-12" style="font-size:clamp(2.2rem,5vw,4.4rem)">Brand brain.</h1>
+    <p class="lead mt-12" style="max-width:60ch">Every rule the AI Guardian enforces lives here as data — colors, logo geometry, type, voice, platforms, scoring thresholds. Edit them and the next audit reacts immediately.</p>
+  </div>
+</section>
+
+<!-- ===================== TOOLBAR ===================== -->
+<section class="container" style="padding-top:0">
+  <div class="admin-toolbar">
+    <div class="atb-group">
+      <label class="atb-field">
+        <span>Active brand</span>
+        <select id="ad-brand"></select>
+      </label>
+      <button class="ci-btn" id="ad-new-brand" title="Create a new brand ruleset">+ New brand</button>
+      <button class="ci-btn" id="ad-rename-brand" title="Rename this brand">Rename</button>
+      <button class="ci-btn danger" id="ad-delete-brand" title="Delete this brand">Delete</button>
+    </div>
+
+    <div class="atb-group">
+      <label class="atb-field">
+        <span>Active version</span>
+        <select id="ad-version"></select>
+      </label>
+      <button class="ci-btn" id="ad-rollback" title="Set this version as active (rollback)">Use version</button>
+      <button class="ci-btn danger" id="ad-delete-version" title="Delete this version">Delete</button>
+    </div>
+
+    <div class="atb-group" style="margin-left:auto">
+      <span class="dirty-pill" id="ad-dirty" hidden>● Unsaved changes</span>
+      <button class="ci-btn" id="ad-discard">Discard</button>
+      <button class="ci-btn" id="ad-save-inplace" title="Update the active version in place">Save changes</button>
+      <button class="ci-btn primary" id="ad-save-version" title="Snapshot as a new version">Save as new version ↗</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ADMIN LAYOUT ===================== -->
+<section class="container" style="padding:24px 0 48px">
+  <div class="admin-shell">
+
+    <!-- Side TOC -->
+    <aside class="admin-toc">
+      <h4>Sections</h4>
+      <ol>
+        <li><a href="#sec-colors" class="active">A. Color palette</a></li>
+        <li><a href="#sec-logo">B. Logo intelligence</a></li>
+        <li><a href="#sec-grid">C. Grid &amp; layout</a></li>
+        <li><a href="#sec-type">D. Typography</a></li>
+        <li><a href="#sec-voice">E. Tone of voice</a></li>
+        <li><a href="#sec-platforms">F. Platforms &amp; safe zones</a></li>
+        <li><a href="#sec-quality">G. Scoring &amp; legal</a></li>
+        <li><a href="#sec-weights">H. Scoring weights</a></li>
+        <li><a href="#sec-relations">I. Rule relations</a></li>
+        <li><a href="#sec-learning">J. Learning insights</a></li>
+        <li><a href="#sec-dna">K. Brand DNA</a></li>
+        <li><a href="#sec-bi">M. Business intelligence</a></li>
+        <li><a href="#sec-versions">L. Version history</a></li>
+      </ol>
+      <a class="ci-btn" href="compliance.html" style="margin-top:24px;justify-content:center">
+        Test in agent →
+      </a>
+    </aside>
+
+    <main class="admin-main">
+
+      <!-- A. Colors -->
+      <section class="rule-section" id="sec-colors">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">A — Color palette</span>
+            <h2 class="h-2" style="margin-top:8px">Approved swatches.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">The AI matches every dominant color in a design against this list. Tolerance controls how generous the match is (ΔE76 — perceptual distance).</p>
+          </div>
+          <button class="ci-btn" data-reset="colors">Reset to defaults</button>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:18px">
+          <div class="rs-card">
+            <div class="between"><b>Primary palette</b><button class="ci-btn primary" id="ad-color-add-primary">+ Add color</button></div>
+            <div class="swatch-list" id="ad-primary"></div>
+          </div>
+          <div class="rs-card">
+            <div class="between"><b>Secondary / cohort palette</b><button class="ci-btn primary" id="ad-color-add-secondary">+ Add color</button></div>
+            <div class="swatch-list" id="ad-secondary"></div>
+          </div>
+        </div>
+
+        <div class="rs-card" style="margin-top:14px">
+          <div class="grid grid-3" style="gap:18px">
+            <label class="field">
+              <span>Tolerance (ΔE)</span>
+              <input type="range" min="4" max="40" step="1" id="ad-tolerance" />
+              <output class="rs-output" id="ad-tolerance-val"></output>
+            </label>
+            <label class="field">
+              <span>On-brand share to PASS</span>
+              <input type="number" min="50" max="100" id="ad-share-pass" /> <span class="rs-suffix">% of canvas</span>
+            </label>
+            <label class="field">
+              <span>On-brand share to REVIEW</span>
+              <input type="number" min="20" max="95" id="ad-share-review" /> <span class="rs-suffix">% of canvas</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="rs-card" style="margin-top:14px">
+          <b>Usage rules</b>
+          <p class="muted" style="margin:6px 0 14px;font-size:.84rem">The brain enforces palette ratios. Set the minimum combined share of primary colors and per-color "ideal" targets — used by the live <i>Color pressure</i> meter.</p>
+          <label class="field">
+            <span>Primary palette must cover at least</span>
+            <input type="number" min="0" max="100" id="ad-primary-min" /> <span class="rs-suffix">% of canvas</span>
+          </label>
+          <div class="ideal-table" id="ad-ideal-table"></div>
+        </div>
+
+        <div class="rs-card" style="margin-top:14px">
+          <b>Forbidden combinations</b>
+          <p class="muted" style="margin:6px 0 14px;font-size:.84rem">Pairs of colors that cannot co-exist above a threshold. The agent FAILs on detection.</p>
+          <div class="combo-table" id="ad-combos"></div>
+          <button class="ci-btn primary" id="ad-combo-add" style="margin-top:10px">+ Add forbidden combo</button>
+        </div>
+      </section>
+
+      <!-- B. Logo intelligence -->
+      <section class="rule-section" id="sec-logo">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">B — Logo intelligence</span>
+            <h2 class="h-2" style="margin-top:8px">Brandmark, smarter.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">The brain detects more than position — it scores prominence, visibility (contrast vs background), and visual balance, and flags logos that are "present but weak".</p>
+          </div>
+          <button class="ci-btn" data-reset="logo">Reset to defaults</button>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:18px">
+          <div class="rs-card">
+            <b>Allowed zones</b>
+            <p class="muted" style="margin:6px 0 14px;font-size:.84rem">Free-form rectangles the logo may sit in. Drag on the canvas to add. Replaces fixed positions.</p>
+            <div class="zone-builder">
+              <div class="zone-canvas" id="ad-zone-canvas">
+                <!-- zones rendered as absolute children -->
+              </div>
+              <div class="zone-help">
+                <button class="ci-btn primary" id="ad-zone-add">+ Add zone</button>
+                <p class="muted" style="font-size:.78rem;margin-top:10px">Drag zones to move. Drag the bottom-right corner to resize. Click × to delete.</p>
+              </div>
+            </div>
+            <div class="grid grid-3" style="gap:14px;margin-top:16px">
+              <label class="field">
+                <span>Clearspace ratio</span>
+                <input type="number" step="0.1" min="0.5" max="3" id="ad-clearspace" />
+                <span class="rs-suffix">× logo height</span>
+              </label>
+              <label class="field">
+                <span>Min size</span>
+                <input type="number" min="16" max="512" id="ad-min-size" />
+                <span class="rs-suffix">px</span>
+              </label>
+              <label class="field">
+                <span>Detection density</span>
+                <input type="number" step="0.01" min="0.01" max="0.5" id="ad-detect" />
+                <span class="rs-suffix">0–1</span>
+              </label>
+            </div>
+            <label class="field" style="margin-top:14px">
+              <span>Clearspace pass threshold</span>
+              <input type="range" min="50" max="100" id="ad-clear-pass" />
+              <output class="rs-output" id="ad-clear-pass-val"></output>
+            </label>
+          </div>
+
+          <div class="rs-card">
+            <b>Intelligence thresholds</b>
+            <p class="muted" style="margin:6px 0 14px;font-size:.84rem">Below these the logo is flagged "present but weak" or fails outright.</p>
+            <div class="grid grid-2" style="gap:14px">
+              <label class="field">
+                <span>Min prominence (% canvas)</span>
+                <input type="number" step="0.1" min="0.1" max="40" id="ad-prominence" />
+              </label>
+              <label class="field">
+                <span>Min contrast ratio</span>
+                <input type="number" step="0.1" min="1" max="21" id="ad-contrast" />
+                <span class="rs-suffix">WCAG (≥4.5 = AA)</span>
+              </label>
+            </div>
+            <label class="field" style="margin-top:14px">
+              <span>"Weak" confidence cap</span>
+              <input type="number" min="50" max="100" id="ad-weak" />
+              <span class="rs-suffix">a PASS below this is treated as "weak"</span>
+            </label>
+
+            <b style="display:block;margin-top:18px">Logo files</b>
+            <div class="logo-files" id="ad-logo-files"></div>
+            <label class="dropzone" style="margin-top:12px;padding:16px">
+              <input type="file" id="ad-logo-upload" accept="image/svg+xml,image/png" hidden />
+              <div class="dz-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 16V4M7 9l5-5 5 5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></div>
+              <div class="dz-title" style="font-size:.86rem">Upload SVG or PNG</div>
+              <div class="dz-sub" style="font-size:.78rem">stays on-device</div>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- C. Grid & layout -->
+      <section class="rule-section" id="sec-grid">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">C — Grid &amp; layout</span>
+            <h2 class="h-2" style="margin-top:8px">Spacing system.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">The base unit and column count the agent uses when checking alignment.</p>
+          </div>
+          <button class="ci-btn" data-reset="grid">Reset to defaults</button>
+        </div>
+        <div class="rs-card">
+          <div class="grid grid-3" style="gap:18px">
+            <label class="field">
+              <span>Base unit</span>
+              <input type="number" min="2" max="32" id="ad-grid-unit" />
+              <span class="rs-suffix">pt</span>
+            </label>
+            <label class="field">
+              <span>Columns</span>
+              <input type="number" min="1" max="24" id="ad-grid-cols" />
+            </label>
+            <label class="field">
+              <span>Gutter</span>
+              <input type="number" min="0" max="64" id="ad-grid-gutter" />
+              <span class="rs-suffix">px</span>
+            </label>
+          </div>
+          <div class="grid-preview" id="ad-grid-preview"></div>
+        </div>
+      </section>
+
+      <!-- D. Typography -->
+      <section class="rule-section" id="sec-type">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">D — Typography</span>
+            <h2 class="h-2" style="margin-top:8px">Allowed type.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">Approved font families + weights, plus headline length thresholds the agent uses.</p>
+          </div>
+          <button class="ci-btn" data-reset="typography">Reset to defaults</button>
+        </div>
+        <div class="grid grid-2" style="margin-top:18px">
+          <div class="rs-card">
+            <b>Allowed fonts</b>
+            <div class="chip-list" id="ad-fonts"></div>
+            <div class="row" style="margin-top:10px;gap:8px">
+              <input type="text" id="ad-font-input" placeholder="e.g. Inter Tight" class="rs-inline-input" />
+              <button class="ci-btn primary" id="ad-font-add">Add</button>
+            </div>
+          </div>
+          <div class="rs-card">
+            <b>Allowed weights</b>
+            <div class="chip-list" id="ad-weights"></div>
+            <div class="row" style="margin-top:10px;gap:8px">
+              <input type="number" id="ad-weight-input" min="100" max="900" step="100" placeholder="700" class="rs-inline-input" />
+              <button class="ci-btn primary" id="ad-weight-add">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="rs-card" style="margin-top:14px">
+          <div class="grid grid-3" style="gap:18px">
+            <label class="field">
+              <span>Max headline words</span>
+              <input type="number" min="3" max="40" id="ad-words-max" />
+            </label>
+            <label class="field">
+              <span>Preferred headline words</span>
+              <input type="number" min="3" max="40" id="ad-words-pref" />
+            </label>
+            <label class="field">
+              <span>Line height</span>
+              <input type="number" step="0.05" min="0.8" max="2" id="ad-line-height" />
+            </label>
+          </div>
+          <label class="role-toggle" style="margin-top:14px">
+            <input type="checkbox" id="ad-no-allcaps" />
+            <span>Forbid all-caps headlines (FAIL with ≥85% confidence)</span>
+          </label>
+          <div class="grid grid-2" style="gap:18px;margin-top:14px">
+            <label class="field">
+              <span>Readability floor (0–100)</span>
+              <input type="number" min="0" max="100" id="ad-read-floor" />
+              <span class="rs-suffix">below = REVIEW</span>
+            </label>
+            <label class="field">
+              <span>Hierarchy floor (0–100)</span>
+              <input type="number" min="0" max="100" id="ad-hier-floor" />
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- E. Voice -->
+      <section class="rule-section" id="sec-voice">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">E — Tone of voice</span>
+            <h2 class="h-2" style="margin-top:8px">How the brand sounds.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">Lists of on-brand and off-brand keywords the agent looks for in any visible copy.</p>
+          </div>
+          <button class="ci-btn" data-reset="voice">Reset to defaults</button>
+        </div>
+        <div class="rs-card" style="margin-top:18px">
+          <label class="field">
+            <span>Brand tone (one line)</span>
+            <input type="text" id="ad-voice-tone" />
+          </label>
+        </div>
+        <div class="grid grid-2" style="margin-top:14px">
+          <div class="rs-card">
+            <b style="color:#15803D">✓ On-brand keywords</b>
+            <div class="chip-list pos" id="ad-voice-good"></div>
+            <div class="row" style="margin-top:10px;gap:8px">
+              <input type="text" id="ad-voice-good-input" placeholder="add a keyword…" class="rs-inline-input" />
+              <button class="ci-btn primary" id="ad-voice-good-add">Add</button>
+            </div>
+          </div>
+          <div class="rs-card">
+            <b style="color:#B91C1C">✕ Forbidden keywords</b>
+            <div class="chip-list neg" id="ad-voice-bad"></div>
+            <div class="row" style="margin-top:10px;gap:8px">
+              <input type="text" id="ad-voice-bad-input" placeholder="add a keyword…" class="rs-inline-input" />
+              <button class="ci-btn primary" id="ad-voice-bad-add">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="rs-card" style="margin-top:14px">
+          <b>Multi-axis tone classifier</b>
+          <p class="muted" style="margin:6px 0 14px;font-size:.84rem">The brain scores the copy across four axes and computes match against the brand vector below. Edit the keyword lists per axis, then dial the brand target.</p>
+          <div class="tone-axes" id="ad-tone-axes"></div>
+          <div class="grid grid-2" style="gap:18px;margin-top:14px">
+            <div class="rs-card" style="background:var(--bg-2)">
+              <b>Brand tone vector</b>
+              <p class="muted" style="margin:6px 0 12px;font-size:.78rem">Sliders auto-normalise to sum to 100%.</p>
+              <div id="ad-tone-vector"></div>
+            </div>
+            <div class="rs-card" style="background:var(--bg-2)">
+              <b>Rewrite hints</b>
+              <p class="muted" style="margin:6px 0 12px;font-size:.78rem">When the brain detects "from", it suggests "to".</p>
+              <div class="rewrite-list" id="ad-rewrites"></div>
+              <div class="row" style="margin-top:10px;gap:8px">
+                <input type="text" id="ad-rewrite-from" placeholder="from…" class="rs-inline-input" />
+                <input type="text" id="ad-rewrite-to" placeholder="to…" class="rs-inline-input" />
+                <button class="ci-btn primary" id="ad-rewrite-add">Add</button>
+              </div>
+            </div>
+          </div>
+          <label class="field" style="margin-top:14px">
+            <span>Tone match PASS threshold</span>
+            <input type="range" min="40" max="95" id="ad-tone-pass" />
+            <output class="rs-output" id="ad-tone-pass-val"></output>
+          </label>
+        </div>
+      </section>
+
+      <!-- F. Platforms / safe zones -->
+      <section class="rule-section" id="sec-platforms">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">F — Platforms &amp; safe zones</span>
+            <h2 class="h-2" style="margin-top:8px">Visual safe-zone builder.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">Define each platform's aspect ratio and drag the safe inset visually. The agent uses these to validate dimensions and margins.</p>
+          </div>
+          <button class="ci-btn" data-reset="platforms">Reset to defaults</button>
+        </div>
+
+        <div class="rs-card" style="margin-top:18px">
+          <div class="platforms-table" id="ad-platforms"></div>
+          <button class="ci-btn primary" id="ad-platform-add" style="margin-top:14px">+ Add platform</button>
+        </div>
+
+        <div class="rs-card" style="margin-top:14px">
+          <div class="between" style="margin-bottom:14px">
+            <b>Visual builder</b>
+            <select id="ad-builder-pick"></select>
+          </div>
+          <div class="builder">
+            <div class="builder-stage" id="ad-builder-stage">
+              <div class="builder-canvas" id="ad-builder-canvas">
+                <div class="builder-safe" id="ad-builder-safe"></div>
+              </div>
+              <div class="builder-meta" id="ad-builder-meta"></div>
+            </div>
+            <div class="builder-controls">
+              <label class="field"><span>Safe inset (%)</span>
+                <input type="range" min="0" max="30" step="1" id="ad-builder-inset" />
+                <output class="rs-output" id="ad-builder-inset-val"></output>
+              </label>
+              <p class="muted" style="font-size:.8rem">Drag the dashed handle on the canvas, or use the slider. Save updates this platform's <code>safeInsetPct</code>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- G. Quality / legal -->
+      <section class="rule-section" id="sec-quality">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">G — Scoring &amp; legal</span>
+            <h2 class="h-2" style="margin-top:8px">Enforcement thresholds.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">Where the strict-guardian behaviour lives — block-below, lock-above, who can override.</p>
+          </div>
+          <button class="ci-btn" data-reset="quality">Reset to defaults</button>
+        </div>
+        <div class="rs-card" style="margin-top:18px">
+          <div class="grid grid-3" style="gap:18px">
+            <label class="field"><span>Block submission below score</span>
+              <input type="number" min="0" max="100" id="ad-min-score" />
+            </label>
+            <label class="field"><span>Auto-lock FAIL above confidence</span>
+              <input type="number" min="0" max="100" id="ad-lock-conf" />
+              <span class="rs-suffix">%</span>
+            </label>
+            <label class="field"><span>Min compression (bpp)</span>
+              <input type="number" step="0.05" min="0.05" max="4" id="ad-bpp" />
+            </label>
+          </div>
+        </div>
+        <div class="rs-card" style="margin-top:14px">
+          <div class="grid grid-2" style="gap:18px">
+            <label class="role-toggle">
+              <input type="checkbox" id="ad-require-legal" />
+              <span>Require disclaimer on every asset</span>
+            </label>
+            <label class="field"><span>Reviewer role label</span>
+              <input type="text" id="ad-role-label" />
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- H. Scoring weights -->
+      <section class="rule-section" id="sec-weights">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">H — Scoring weights</span>
+            <h2 class="h-2" style="margin-top:8px">What matters most.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">The overall brand-compliance score is a weighted average across six categories. Adjust the dial — the brain re-scores every audit instantly.</p>
+          </div>
+          <button class="ci-btn" data-reset="quality">Reset to defaults</button>
+        </div>
+        <div class="rs-card" style="margin-top:18px">
+          <div class="weight-bar" id="ad-weight-bar"></div>
+          <div class="weight-grid" id="ad-weights"></div>
+          <div class="weight-meta">
+            <span>Total <b id="ad-weight-total">100</b>%</span>
+            <span class="muted" style="font-size:.78rem">Auto-normalises to 100 after each change.</span>
+          </div>
+          <div class="grid grid-2" style="gap:18px;margin-top:14px">
+            <label class="field">
+              <span>Style match floor (DNA)</span>
+              <input type="number" min="0" max="100" id="ad-style-floor" />
+              <span class="rs-suffix">below this triggers a "not Qi style" warning</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- I. Rule relations -->
+      <section class="rule-section" id="sec-relations">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">I — Rule relations</span>
+            <h2 class="h-2" style="margin-top:8px">Rules talk to each other.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">Define multipliers that fire when one category fails. e.g. "Color FAIL → penalise everything by ×1.2" or "Logo weak → make platform safety stricter".</p>
+          </div>
+          <button class="ci-btn" data-reset="quality">Reset to defaults</button>
+        </div>
+        <div class="rs-card" style="margin-top:18px">
+          <div class="rel-table" id="ad-relations"></div>
+          <button class="ci-btn primary" id="ad-relation-add" style="margin-top:14px">+ Add relation</button>
+        </div>
+      </section>
+
+      <!-- J. Learning -->
+      <section class="rule-section" id="sec-learning">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">J — Learning insights</span>
+            <h2 class="h-2" style="margin-top:8px">The brain learns from you.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">Every audit and every override is logged. When auto-adjust is on, the brain quietly retunes tolerances and weights based on what reviewers consistently override.</p>
+          </div>
+          <button class="ci-btn danger" id="ad-clear-learning">Clear learning history</button>
+        </div>
+        <div class="rs-card" style="margin-top:18px">
+          <label class="role-toggle">
+            <input type="checkbox" id="ad-learning-auto" />
+            <span>Auto-adjust tolerance and weights based on override patterns</span>
+          </label>
+          <div class="learning-stats" id="ad-learning-stats" style="margin-top:14px"></div>
+          <div class="learning-rules" id="ad-learning-rules" style="margin-top:14px"></div>
+          <div class="learning-suggestions" id="ad-learning-suggestions" style="margin-top:14px"></div>
+        </div>
+      </section>
+
+      <!-- K. Brand DNA -->
+      <section class="rule-section" id="sec-dna">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">K — Brand DNA</span>
+            <h2 class="h-2" style="margin-top:8px">Train the brain on great work.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">Add reference designs from the agent (each "Run audit" lets you press <i>+ Add as reference</i>). Their fingerprint averages into your Brand DNA — the brain then catches designs that pass every rule but don't <i>look</i> like Qi.</p>
+          </div>
+        </div>
+        <div class="rs-card" style="margin-top:18px">
+          <label class="role-toggle">
+            <input type="checkbox" id="ad-dna-enabled" />
+            <span>Use Brand DNA in audits</span>
+          </label>
+          <div class="dna-summary" id="ad-dna-summary" style="margin-top:14px"></div>
+          <div class="dna-list" id="ad-dna-list" style="margin-top:14px"></div>
+        </div>
+      </section>
+
+      <!-- M. Business Intelligence -->
+      <section class="rule-section" id="sec-bi">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">M — Business intelligence</span>
+            <h2 class="h-2" style="margin-top:8px">Brand performance at a glance.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">Audit history, pass rates, top failures, and override trends — all derived from the learning loop data. Run audits in the Compliance Agent to populate.</p>
+          </div>
+          <button class="ci-btn" id="ad-bi-refresh">Refresh</button>
+        </div>
+        <div class="rs-card" style="margin-top:18px">
+          <div id="ad-bi">
+            <div class="bi-empty">Run audits in the Compliance Agent to generate intelligence data.</div>
+          </div>
+          <div class="bi-export-row">
+            <button class="ci-btn" id="ad-bi-export-csv">Export CSV ↓</button>
+            <button class="ci-btn" id="ad-bi-export-json">Export JSON ↓</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- L. Versions -->
+      <section class="rule-section" id="sec-versions">
+        <div class="rs-head">
+          <div>
+            <span class="eyebrow">L — Version history</span>
+            <h2 class="h-2" style="margin-top:8px">Audit trail.</h2>
+            <p class="muted" style="margin-top:6px;font-size:.92rem;max-width:60ch">Every saved snapshot. The active version is the one the agent uses for new audits — and is recorded against every audit in the log.</p>
+          </div>
+          <button class="ci-btn danger" id="ad-reset-all">Reset everything to defaults</button>
+        </div>
+        <div class="rs-card" style="margin-top:18px">
+          <div class="version-list" id="ad-version-list"></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="color:#fff">
+          <span class="qi-logo" style="color:var(--qi-yellow)"><svg viewBox="0 0 100 100" width="28" height="28"><g fill="currentColor" transform="translate(0 -2) scale(.20887)"><path d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></g></svg></span>
+          <span class="brand-text" style="color:#fff">Qi Brand Center</span>
+        </a>
+        <p style="margin-top:18px;color:rgba(255,255,255,.7);max-width:36ch;font-size:.92rem">Brand Rule Engine v0.1 — every rule editable, every audit auditable.</p>
+      </div>
+      <div><h5>Identity</h5><a href="identity.html">Brandmark</a><a href="color.html">Color</a><a href="typography.html">Typography</a><a href="iconography.html">Iconography</a></div>
+      <div><h5>System</h5><a href="imagery.html">Imagery</a><a href="graphic-device.html">Graphic Device</a><a href="layout.html">Grids &amp; Layout</a><a href="voice.html">Voice &amp; Tone</a></div>
+      <div><h5>Resources</h5><a href="applications.html">Applications</a><a href="compliance.html">Compliance Agent</a><a href="admin.html">Brand Settings</a><a href="downloads.html">Downloads</a></div>
+    </div>
+    <div class="legal"><div>© 2026 Qi. Brand Guidelines v0.2.</div><div>Press <span class="kbd">⌘</span> <span class="kbd">K</span> to search</div></div>
+  </div>
+</footer>
+
+<!-- Search overlay -->
+<div class="search-overlay" role="dialog" aria-label="Search">
+  <div class="search-box">
+    <input placeholder="Search the brand center…" />
+    <div class="results">
+      <a href="admin.html"><span>Brand Settings — rule engine admin</span><span class="kbd">Admin</span></a>
+      <a href="compliance.html"><span>Compliance Agent — auto-audit a creative</span><span class="kbd">Agent</span></a>
+      <a href="color.html"><span>Cool palette — Yellow, Black, Teal, White</span><span class="kbd">Color</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- Prompt modal (used for new brand / rename / save-version notes) -->
+<div class="modal" id="ad-prompt" hidden>
+  <div class="modal-card">
+    <div class="modal-head">
+      <div>
+        <div class="eyebrow" id="ad-prompt-eyebrow">Prompt</div>
+        <h3 class="h-3" id="ad-prompt-title" style="margin-top:6px"></h3>
+      </div>
+      <button class="icon-btn" id="ad-prompt-close" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="modal-body">
+      <p class="muted" id="ad-prompt-help" style="font-size:.88rem;margin:0 0 10px"></p>
+      <input type="text" id="ad-prompt-input" />
+      <div class="modal-actions">
+        <button class="ci-btn" id="ad-prompt-cancel">Cancel</button>
+        <button class="ci-btn primary" id="ad-prompt-ok">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/brand-engine.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>

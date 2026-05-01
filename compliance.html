@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Compliance Agent — Qi Brand Center</title>
+<meta name="description" content="AI-powered brand compliance agent. Upload a design and the Qi Guardian evaluates logo, color, typography, tone, imagery, legal, resolution and platform safe-area in real time." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="icon" type="image/svg+xml" href="assets/img/qi-icon.svg" />
+</head>
+<body>
+
+<!-- ===================== FLOATING DOCK NAV ===================== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="Qi Brand Center home">
+      <span class="qi-logo" style="color:var(--qi-yellow)"><svg viewBox="0 0 100 100" width="28" height="28"><g fill="currentColor" transform="translate(0 -2) scale(.20887)"><path d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></g></svg></span>
+      <span class="brand-text">Qi Brand</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-link" href="index.html">Home</a>
+      <div class="has-dropdown">
+        <a class="nav-link" href="identity.html">Identity <span class="chev">▾</span></a>
+        <div class="dropdown" role="menu">
+          <a href="identity.html"><span class="swatch" style="background:#000"></span> Brandmark</a>
+          <a href="color.html"><span class="swatch" style="background:#F2CD00"></span> Color</a>
+          <a href="typography.html"><span class="swatch" style="background:#0A0A0A"></span> Typography</a>
+          <a href="iconography.html"><span class="swatch" style="background:#00BFB3"></span> Iconography</a>
+          <a href="imagery.html"><span class="swatch" style="background:#0891B2"></span> Imagery</a>
+          <a href="graphic-device.html"><span class="swatch" style="background:#FFE76A"></span> Graphic Device</a>
+          <a href="layout.html"><span class="swatch" style="background:#EDEAE0"></span> Grids &amp; Layout</a>
+        </div>
+      </div>
+      <a class="nav-link" href="voice.html">Voice</a>
+      <a class="nav-link" href="applications.html">Apps</a>
+      <a class="nav-link active" href="compliance.html">Compliance</a>
+      <a class="nav-link" href="admin.html">Brand&nbsp;Settings</a>
+      <a class="nav-link" href="downloads.html">Downloads</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn" data-search-open aria-label="Search (⌘K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle theme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+      <a class="nav-cta" href="downloads.html">Get assets</a>
+      <button class="icon-btn menu-toggle" data-menu-toggle aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== PAGE HEAD ===================== -->
+<section class="container page-head reveal" style="grid-template-columns:1.2fr .8fr">
+  <div>
+    <div class="crumbs"><a href="index.html">Brand Center</a> / Compliance Agent</div>
+    <div class="row" style="gap:8px;margin-top:8px">
+      <span class="eyebrow">Section 12 — Brand Guardian</span>
+      <span class="ai-badge"><span class="ai-pulse"></span> AI Agent · v0.4 active</span>
+    </div>
+    <h1 class="h-display mt-12">Compliance,<br/><span style="background:var(--qi-yellow);-webkit-background-clip:text;background-clip:text;color:transparent">enforced.</span></h1>
+    <p class="lead mt-12">Drop in a design. The Qi Guardian agent scores eight brand rules in under three seconds — logo, palette, type, tone, imagery, legal, resolution and platform safe-area — and blocks anything that drifts.</p>
+    <div class="row" style="margin-top:24px;gap:10px">
+      <span class="kpi-pill"><b>−72%</b> reviewer time</span>
+      <span class="kpi-pill"><b>≥85%</b> auto-block threshold</span>
+      <span class="kpi-pill"><b>0</b> off-brand assets shipped</span>
+    </div>
+  </div>
+  <div class="visual ai-hero" aria-hidden="true">
+    <div class="ai-hero-grid">
+      <div class="ai-hero-tile pass"><span class="dot"></span> Logo</div>
+      <div class="ai-hero-tile pass"><span class="dot"></span> Color</div>
+      <div class="ai-hero-tile warn"><span class="dot"></span> Type</div>
+      <div class="ai-hero-tile pass"><span class="dot"></span> Tone</div>
+      <div class="ai-hero-tile pass"><span class="dot"></span> Image</div>
+      <div class="ai-hero-tile fail"><span class="dot"></span> Legal</div>
+      <div class="ai-hero-tile pass"><span class="dot"></span> Res.</div>
+      <div class="ai-hero-tile pass"><span class="dot"></span> Safe</div>
+    </div>
+    <div class="ai-hero-score">
+      <div class="ai-hero-score-ring" style="--p:88"><span>88</span></div>
+      <div class="ai-hero-score-meta">
+        <div class="label">Live demo · Q1 campaign</div>
+        <div class="muted" style="font-size:.78rem;margin-top:4px">7 of 8 checks pass · 1 blocking</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AI DESIGN GENERATOR ===================== -->
+<section class="container" style="padding:0 0 8px" id="ag-generator-section">
+  <div class="generator-wrap">
+    <button class="generator-toggle" id="ag-gen-toggle" aria-expanded="false">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      AI Design Generator — create a brand-compliant design from your brief
+      <span class="gen-badge">NEW</span>
+      <svg class="gen-chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <div class="generator-body" id="ag-gen-body" hidden>
+      <div>
+        <label class="field">
+          <span>Campaign goal</span>
+          <select id="ag-gen-goal">
+            <option value="awareness">Brand awareness</option>
+            <option value="conversion">Conversion / offer</option>
+            <option value="engagement">Engagement / social</option>
+          </select>
+        </label>
+        <label class="field" style="margin-top:10px">
+          <span>Headline (used on the design)</span>
+          <input id="ag-gen-headline" type="text" placeholder="Easy mobile banking for all." />
+        </label>
+        <label class="field" style="margin-top:10px">
+          <span>Legal / disclaimer line</span>
+          <input id="ag-gen-legal" type="text" placeholder="Terms apply. Qi is licensed by CBI." />
+        </label>
+        <button class="btn btn-yellow w-full" id="ag-gen-run" style="margin-top:14px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Generate compliant design
+        </button>
+        <p class="muted" style="font-size:.76rem;margin-top:8px">The design is generated using your active brand rules — colors, logo zones, and platform dimensions. It's pre-built to pass compliance.</p>
+      </div>
+      <div>
+        <div class="gen-thumb-wrap" id="ag-gen-preview">
+          <div class="gen-empty">Fill the brief and click Generate.</div>
+        </div>
+        <div class="gen-actions" id="ag-gen-actions" hidden>
+          <a class="btn btn-yellow btn-sm" id="ag-gen-download">Download PNG ↓</a>
+          <button class="btn btn-ghost btn-sm" id="ag-gen-load">Load into agent →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== UPLOADER + RESULTS ===================== -->
+<section class="container" style="padding:32px 0 48px" id="agent">
+
+  <!-- Step 1: brief + upload -->
+  <div class="agent-shell">
+
+    <!-- Left rail: brief + upload -->
+    <aside class="agent-brief">
+      <div class="brief-step">
+        <span class="step-num">01</span>
+        <h3 class="h-3">Tell the agent the brief</h3>
+        <p class="muted" style="font-size:.86rem;margin:8px 0 16px">A few inputs help the AI reason about platform, audience, and required disclaimers.</p>
+
+        <label class="field">
+          <span>Platform & format</span>
+          <select id="ag-platform">
+            <option value="ig-feed" data-w="1080" data-h="1080">Instagram · Feed (1080×1080)</option>
+            <option value="ig-portrait" data-w="1080" data-h="1350" selected>Instagram · Portrait (1080×1350)</option>
+            <option value="ig-story" data-w="1080" data-h="1920">Instagram · Story (1080×1920)</option>
+            <option value="fb-feed" data-w="1200" data-h="630">Facebook · Feed (1200×630)</option>
+            <option value="x-post" data-w="1600" data-h="900">X / Twitter · Post (1600×900)</option>
+            <option value="li-post" data-w="1200" data-h="1200">LinkedIn · Square (1200×1200)</option>
+            <option value="bb-square" data-w="2160" data-h="2160">Billboard · Square (2160×2160)</option>
+            <option value="card-3-2" data-w="1350" data-h="900">Print · 3:2 card (1350×900)</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Audience cohort</span>
+          <select id="ag-cohort">
+            <option value="primary">Primary — Yellow / Black</option>
+            <option value="male">Audience · Male — #1E3A5F</option>
+            <option value="female">Audience · Female — #B5365A</option>
+            <option value="kids">Audience · Kids — #FF6B35</option>
+            <option value="youth">Audience · Youth — #6C5CE7</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Headline / on-design copy</span>
+          <textarea id="ag-copy" rows="3" placeholder="Paste the visible text on the design — e.g. ‘Easy mobile banking for all.’"></textarea>
+        </label>
+
+        <label class="field">
+          <span>Required disclaimer (regulator, T&amp;C, APR…)</span>
+          <input id="ag-legal" type="text" placeholder="e.g. ‘Terms apply. Qi is licensed by CBI.’" />
+        </label>
+      </div>
+
+      <div class="brief-step">
+        <span class="step-num">02</span>
+        <h3 class="h-3">Drop the design</h3>
+        <p class="muted" style="font-size:.86rem;margin:8px 0 16px">PNG, JPG, WebP or MP4 (first frame analysed). Files stay on-device.</p>
+
+        <label class="dropzone" id="ag-dropzone">
+          <input type="file" id="ag-file" accept="image/*,video/mp4" hidden />
+          <div class="dz-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 16V4M7 9l5-5 5 5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+          </div>
+          <div class="dz-title">Drop a design here</div>
+          <div class="dz-sub">or <span class="link">browse files</span></div>
+          <div class="dz-rule mono">max 25 MB · evaluated in &lt; 3 s</div>
+        </label>
+
+        <button class="btn btn-yellow w-full" id="ag-run" disabled>
+          <span class="ai-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/></svg></span>
+          Run brand audit
+        </button>
+
+        <button class="btn btn-ghost btn-sm w-full" id="ag-sample" style="margin-top:8px">Try a sample design instead</button>
+      </div>
+
+      <div class="brief-step">
+        <span class="step-num">✦</span>
+        <h3 class="h-3">Pre-design guide</h3>
+        <p class="muted" style="font-size:.86rem;margin:6px 0 10px">Live rules for the selected platform &amp; brand.</p>
+        <div id="ag-predesign" class="predesign-recs"></div>
+        <div class="rt-guard-badge" id="ag-rt-guard" style="margin-top:10px">
+          <span class="ai-pulse"></span> Real-time guard: idle
+        </div>
+        <div id="ag-rt-hint" class="rt-live-hint" hidden></div>
+      </div>
+
+      <div class="brief-step">
+        <span class="step-num">03</span>
+        <h3 class="h-3">Reviewer policy</h3>
+        <p class="muted" style="font-size:.86rem;margin:8px 0 14px">How strict the agent is right now.</p>
+        <div class="policy">
+          <div class="policy-row"><span>Auto-lock on FAIL ≥</span><b id="ag-policy-lock">85% confidence</b></div>
+          <div class="policy-row"><span>Block submission below</span><b id="ag-policy-min">85 score</b></div>
+          <div class="policy-row"><span>Override clearance</span><b id="ag-policy-role">Brand Manager</b></div>
+          <label class="role-toggle">
+            <input type="checkbox" id="ag-role" />
+            <span id="ag-role-label">I am Brand Manager (unlock locked items)</span>
+          </label>
+          <a href="admin.html" class="ci-btn" style="margin-top:10px;justify-content:center">⚙ Edit rules in admin</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right: stage + checklist -->
+    <main class="agent-main">
+
+      <!-- Stage / canvas -->
+      <div class="stage" id="ag-stage">
+        <!-- Empty state -->
+        <div class="stage-empty" id="ag-empty">
+          <div class="stage-empty-grid">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="stage-empty-inner">
+            <div class="stage-empty-mark">
+              <svg viewBox="0 0 100 100" width="40" height="40"><g fill="currentColor" transform="translate(0 -2) scale(.20887)"><path d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></g></svg>
+            </div>
+            <h3 class="h-2" style="margin-top:18px">The Guardian is idle.</h3>
+            <p class="muted" style="margin-top:10px;max-width:42ch;text-align:center">Drop a creative on the left. The AI agent will pre-fill every checklist item with a verdict, confidence, and a suggested fix.</p>
+          </div>
+        </div>
+
+        <!-- Live preview (filled at runtime) -->
+        <div class="stage-live" id="ag-live" hidden>
+          <div class="stage-frame" id="ag-frame">
+            <img id="ag-img" alt="Uploaded design preview" />
+            <canvas id="ag-overlay" class="stage-overlay"></canvas>
+            <div class="stage-toolbar">
+              <button class="chip-btn" data-toggle="boxes" aria-pressed="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                Bounding boxes
+              </button>
+              <button class="chip-btn" data-toggle="safe" aria-pressed="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l9-4 9 4M3 7v10l9 4 9-4V7M3 7l9 4 9-4M12 11v10"/></svg>
+                Safe area
+              </button>
+              <button class="chip-btn" data-toggle="palette" aria-pressed="true">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="9" r="1.4"/><circle cx="15" cy="9" r="1.4"/><circle cx="9" cy="15" r="1.4"/><circle cx="15" cy="15" r="1.4"/></svg>
+                Palette swatches
+              </button>
+            </div>
+            <!-- Analysing scrim -->
+            <div class="scanline" id="ag-scan" hidden>
+              <div class="scan-bar"></div>
+              <div class="scan-grid"></div>
+              <div class="scan-status">
+                <span class="ai-pulse"></span>
+                <span id="ag-scan-text">AI is analysing…</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Score + verdict bar -->
+      <div class="verdict-bar" id="ag-verdict" hidden>
+        <div class="verdict-score">
+          <div class="ring" id="ag-ring" style="--p:0">
+            <span class="ring-num"><b id="ag-score">0</b><i>/100</i></span>
+          </div>
+          <div>
+            <div class="verdict-meta">
+              <div class="label">Overall brand score</div>
+              <span class="brand-pill" id="ag-brand-pill">Qi</span>
+              <a href="admin.html" class="version-pill" id="ag-version-pill" title="Open admin to edit rules">Rules v1</a>
+            </div>
+            <div class="h-3" id="ag-headline" style="margin-top:6px">Awaiting analysis</div>
+            <div class="muted" id="ag-summary" style="font-size:.86rem;margin-top:6px">Drop a design to begin.</div>
+          </div>
+        </div>
+        <div class="verdict-actions">
+          <div class="palette-readout" id="ag-palette" aria-label="Detected palette"></div>
+          <button class="btn btn-ghost btn-sm" id="ag-rerun" hidden>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 15.5-6.3L21 8M21 3v5h-5M21 12a9 9 0 0 1-15.5 6.3L3 16M3 21v-5h5"/></svg>
+            Re-run
+          </button>
+          <button class="btn btn-yellow btn-sm" id="ag-submit" disabled>
+            Submit for approval
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Brain panels: categories, color pressure, style match -->
+      <div class="brain-panels" id="ag-brain-panels">
+        <div class="brain-card brain-cats">
+          <div class="brain-head"><span class="eyebrow">Category breakdown</span><span class="muted" style="font-size:.74rem">weighted score</span></div>
+          <div id="ag-categories" class="cats-list">
+            <div class="cats-empty">Run an audit to see the category breakdown.</div>
+          </div>
+        </div>
+        <div class="brain-card brain-press">
+          <div class="brain-head"><span class="eyebrow">Color pressure</span><span class="muted" style="font-size:.74rem">distance from ideal</span></div>
+          <div id="ag-pressure" class="press-body"></div>
+        </div>
+        <div class="brain-card brain-style">
+          <div class="brain-head"><span class="eyebrow">Brand DNA</span><button class="ci-btn" id="ag-dna-train" hidden>+ Add as reference</button></div>
+          <div id="ag-style-match" class="style-body"></div>
+        </div>
+      </div>
+
+      <!-- Campaign consistency panel -->
+      <div class="campaign-panel" id="ag-campaign-section">
+        <div class="camp-header">
+          <span class="eyebrow">Campaign consistency</span>
+          <button class="ci-btn" id="ag-camp-start">+ New campaign</button>
+        </div>
+        <div id="ag-campaign">
+          <div class="camp-empty">Group multiple audits into a campaign to track cross-platform consistency.</div>
+        </div>
+      </div>
+
+      <!-- Checklist -->
+      <div class="checklist" id="ag-checklist">
+        <!-- Items injected by compliance.js -->
+      </div>
+
+      <!-- Learning log -->
+      <div class="learning" id="ag-learning">
+        <div class="between">
+          <div>
+            <div class="eyebrow">Learning loop</div>
+            <h3 class="h-3" style="margin-top:8px">Reviewer overrides shape future verdicts.</h3>
+            <p class="muted" style="font-size:.86rem;margin-top:6px;max-width:54ch">Every override (with its comment) is logged locally and replayed into the agent's heuristics. Today it watches eight rules — by the next sprint it will have learned your team's exceptions.</p>
+          </div>
+          <div class="learning-stats">
+            <div class="learning-stat"><b id="ag-overrides-count">0</b><span>overrides</span></div>
+            <div class="learning-stat"><b id="ag-runs-count">0</b><span>audits run</span></div>
+            <div class="learning-stat"><b id="ag-blocked-count">0</b><span>auto-blocked</span></div>
+          </div>
+        </div>
+        <div class="learning-log" id="ag-log"></div>
+        <div class="learning-actions">
+          <button class="btn btn-ghost btn-sm" id="ag-clear-log">Clear log</button>
+        </div>
+      </div>
+
+      <!-- Integration / export bar -->
+      <div class="integration-bar" id="ag-integrations">
+        <span>Export &amp; integrate:</span>
+        <button class="ci-btn" id="ag-export-figma">Figma spec JSON ↓</button>
+        <button class="ci-btn" id="ag-export-tokens">Design tokens W3C ↓</button>
+        <button class="ci-btn" id="ag-export-report">Audit report PDF ↓</button>
+        <button class="ci-btn primary" id="ag-publish-btn" style="margin-left:auto" disabled>Schedule &amp; publish →</button>
+      </div>
+
+    </main>
+  </div>
+</section>
+
+<!-- ===================== HOW THE AGENT THINKS ===================== -->
+<section class="section container">
+  <div class="section-head reveal">
+    <div>
+      <span class="eyebrow">Inside the agent</span>
+      <h2 class="h-1" style="margin-top:14px">Eight rules, one strict guardian.</h2>
+    </div>
+    <p class="right">The agent is decisive, not advisory. Each rule produces a verdict and a confidence score — anything failed above 85% is locked until a Brand Manager reviews it.</p>
+  </div>
+  <div class="grid grid-4 reveal rule-grid">
+    <div class="rule-card"><div class="rule-num">01</div><h4>Logo &amp; clear-space</h4><p>Detects the Qi mark, measures spacing on all four sides against the 1× clearspace rule.</p></div>
+    <div class="rule-card"><div class="rule-num">02</div><h4>Color palette</h4><p>Extracts dominant colors and compares ΔE distance against the approved Qi HEX list.</p></div>
+    <div class="rule-card"><div class="rule-num">03</div><h4>Typography</h4><p>Approximates type style and flags anything outside FF Mark Pro / 29LT Bukra / Inter Tight.</p></div>
+    <div class="rule-card"><div class="rule-num">04</div><h4>Tone of voice</h4><p>Reads on-design copy and scores it against Qi voice — clear, confident, warm.</p></div>
+    <div class="rule-card"><div class="rule-num">05</div><h4>Imagery style</h4><p>Classifies the visual as lifestyle, still-life, illustration or stock — and rejects stock.</p></div>
+    <div class="rule-card"><div class="rule-num">06</div><h4>Legal compliance</h4><p>Looks for the disclaimer text you supplied and verifies it's present and legible.</p></div>
+    <div class="rule-card"><div class="rule-num">07</div><h4>Resolution &amp; quality</h4><p>Measures pixel density, JPEG artefact ratio, and minimum DPI for the chosen platform.</p></div>
+    <div class="rule-card"><div class="rule-num">08</div><h4>Platform &amp; safe area</h4><p>Validates dimensions and safe margins — Instagram action area, billboard bleed, etc.</p></div>
+  </div>
+</section>
+
+<!-- ===================== ENFORCEMENT ===================== -->
+<section class="section container">
+  <div class="grid grid-2 reveal">
+    <div class="enforce">
+      <span class="eyebrow">Auto-enforcement</span>
+      <h3 class="h-2" style="margin-top:12px">A guardian, not a suggestion box.</h3>
+      <ul class="enforce-list">
+        <li><b>Lock on high-confidence FAIL</b> — if the agent is more than 85% sure something breaks brand, only a Brand Manager can override.</li>
+        <li><b>Block sub-85 submissions</b> — the <i>Submit</i> button is disabled until the asset clears the bar.</li>
+        <li><b>Mandatory comments on overrides</b> — every human override must explain itself, and is logged for audit.</li>
+        <li><b>Replay into the model</b> — overrides feed back into the heuristics so the agent learns the team's exceptions.</li>
+      </ul>
+    </div>
+    <div class="enforce dark">
+      <span class="eyebrow" style="color:var(--qi-yellow)">Why this exists</span>
+      <h3 class="h-2" style="margin-top:12px;color:#fff">70% less reviewer effort.</h3>
+      <p style="color:rgba(255,255,255,.7);margin-top:14px">Brand managers used to triage every campaign creative by eye. The Guardian agent does the first pass automatically and flags only the items that need human judgement — turning a 30-minute review into a 4-minute sign-off.</p>
+      <div class="enforce-meta">
+        <div><b>−72%</b><span>reviewer time</span></div>
+        <div><b>3.0×</b><span>throughput</span></div>
+        <div><b>0</b><span>off-brand assets shipped</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="color:#fff">
+          <span class="qi-logo" style="color:var(--qi-yellow)"><svg viewBox="0 0 100 100" width="28" height="28"><g fill="currentColor" transform="translate(0 -2) scale(.20887)"><path d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></g></svg></span>
+          <span class="brand-text" style="color:#fff">Qi Brand Center</span>
+        </a>
+        <p style="margin-top:18px;color:rgba(255,255,255,.7);max-width:36ch;font-size:.92rem">Compliance Agent v0.4 — local AI inference, zero data sent off-device.</p>
+      </div>
+      <div><h5>Identity</h5><a href="identity.html">Brandmark</a><a href="color.html">Color</a><a href="typography.html">Typography</a><a href="iconography.html">Iconography</a></div>
+      <div><h5>System</h5><a href="imagery.html">Imagery</a><a href="graphic-device.html">Graphic Device</a><a href="layout.html">Grids &amp; Layout</a><a href="voice.html">Voice &amp; Tone</a></div>
+      <div><h5>Resources</h5><a href="applications.html">Applications</a><a href="compliance.html">Compliance Agent</a><a href="downloads.html">Downloads</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="legal"><div>© 2026 Qi. Brand Guidelines v0.2.</div><div>Press <span class="kbd">⌘</span> <span class="kbd">K</span> to search</div></div>
+  </div>
+</footer>
+
+<!-- Search overlay -->
+<div class="search-overlay" role="dialog" aria-label="Search">
+  <div class="search-box">
+    <input placeholder="Search the brand center…" />
+    <div class="results">
+      <a href="compliance.html"><span>Compliance Agent — auto-audit a creative</span><span class="kbd">Agent</span></a>
+      <a href="identity.html"><span>Brandmark, clearspace, sizing</span><span class="kbd">Identity</span></a>
+      <a href="color.html"><span>Cool palette — Yellow, Black, Teal, White</span><span class="kbd">Color</span></a>
+      <a href="typography.html"><span>FF Mark Pro &amp; 29LT Bukra</span><span class="kbd">Type</span></a>
+      <a href="voice.html"><span>Voice &amp; tone — clear, confident, warm</span><span class="kbd">Voice</span></a>
+      <a href="downloads.html"><span>Download the brand kit</span><span class="kbd">Files</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- Override modal -->
+<div class="modal" id="ag-modal" hidden>
+  <div class="modal-card">
+    <div class="modal-head">
+      <div>
+        <div class="eyebrow">Override AI verdict</div>
+        <h3 class="h-3" id="ag-modal-title" style="margin-top:6px">Why are you overriding?</h3>
+      </div>
+      <button class="icon-btn" id="ag-modal-close" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="modal-body">
+      <p class="muted" style="font-size:.88rem;margin:0 0 14px">The agent locked this item with high confidence. Add a justification — it will be logged and used to teach future audits.</p>
+      <textarea id="ag-modal-comment" rows="4" placeholder="e.g. ‘Approved exception — the partner co-brand template overrides clearspace by 8% per legal Q4-1042.’"></textarea>
+      <div class="modal-actions">
+        <button class="btn btn-ghost btn-sm" id="ag-modal-cancel">Cancel</button>
+        <button class="btn btn-yellow btn-sm" id="ag-modal-save">Save override</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Auto-Fix Engine modal -->
+<div class="modal" id="ag-fix-modal" hidden>
+  <div class="modal-card" style="max-width:600px">
+    <div class="modal-head">
+      <div>
+        <div class="eyebrow">Auto-Fix Engine</div>
+        <h3 class="h-3" id="ag-fix-title" style="margin-top:6px">Applying fix…</h3>
+      </div>
+      <button class="icon-btn" id="ag-fix-close" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="modal-body" id="ag-fix-body">
+      <div class="fix-preview-wrap"><canvas id="ag-fix-canvas"></canvas></div>
+      <p class="fix-caption" id="ag-fix-caption"></p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost btn-sm" id="ag-fix-cancel">Cancel</button>
+        <a class="btn btn-yellow btn-sm" id="ag-fix-download" download="qi-fixed.png">Download fixed design ↓</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Publishing / scheduling modal -->
+<div class="modal" id="ag-publish-modal" hidden>
+  <div class="modal-card" style="max-width:500px">
+    <div class="modal-head">
+      <div>
+        <div class="eyebrow">Auto Publishing Flow</div>
+        <h3 class="h-3" style="margin-top:6px">Schedule this design</h3>
+      </div>
+      <button class="icon-btn" id="ag-pub-close" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="modal-body" id="ag-pub-body">
+      <p class="muted" style="font-size:.86rem;margin:0 0 14px">Choose a platform and time. The design is locked once scheduled — any brand changes will flag it for review.</p>
+      <label class="field"><span>Platform</span>
+        <div class="pub-platforms" id="ag-pub-platforms"></div>
+      </label>
+      <label class="field" style="margin-top:12px"><span>Schedule date &amp; time</span>
+        <input type="datetime-local" id="ag-pub-when" />
+      </label>
+      <label class="field" style="margin-top:12px"><span>Social account / handle</span>
+        <input type="text" id="ag-pub-account" placeholder="@qi.bank" />
+      </label>
+      <div class="pub-info" id="ag-pub-info">Select a platform above.</div>
+      <div class="modal-actions" style="margin-top:16px">
+        <button class="btn btn-ghost btn-sm" id="ag-pub-cancel">Cancel</button>
+        <button class="btn btn-yellow btn-sm" id="ag-pub-confirm">Schedule →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/brand-engine.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/compliance.js"></script>
+</body>
+</html>
