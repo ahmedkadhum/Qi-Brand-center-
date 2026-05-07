@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import http.server, socketserver, os, sys, functools
-ROOT = "/Users/ahmed/Desktop/Qi brand Cnter "
+ROOT = os.path.dirname(os.path.abspath(__file__))
 PORT = int(os.environ.get("PORT", "8765"))
 Handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=ROOT)
 with socketserver.TCPServer(("127.0.0.1", PORT), Handler) as httpd:

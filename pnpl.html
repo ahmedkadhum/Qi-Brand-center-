@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Buy Now Pay Later — Qi Brand Center</title>
+<meta name="description" content="Qi Buy Now Pay Later (قسّطها ويه كي) brand guideline — logo, clear space, visual system, social posts, partner co-branding, non-digital channels, billboards, and the Buy now pay later CTA." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="icon" type="image/svg+xml" href="assets/img/qi-icon.svg" />
+<style>
+  /* PNPL sub-brand tokens — used only on this page */
+  .pnpl-yellow{background:#F5C800;color:#0D0D0D}
+  .pnpl-black{background:#0D0D0D;color:#fff}
+  .pnpl-white{background:#fff;color:#0D0D0D;border:1px solid var(--line)}
+  .pnpl-mark{display:inline-flex;align-items:center;gap:14px;font-family:'Inter Tight',sans-serif;font-weight:700;direction:rtl}
+  .pnpl-mark .q{display:inline-grid;place-items:center;width:64px;height:64px}
+  .pnpl-mark .q svg{width:100%;height:100%}
+  .pnpl-mark .word{font-size:1.6rem;line-height:1;text-align:right}
+  .pnpl-mark .word span{display:block}
+  .pnpl-corner{position:absolute;width:16px;height:16px}
+  .pnpl-corner svg{width:100%;height:100%;color:#F5C800}
+  .pnpl-frame{position:relative}
+  .pnpl-frame .pnpl-corner.tl{top:8px;left:8px}
+  .pnpl-frame .pnpl-corner.tr{top:8px;right:8px}
+  .pnpl-frame .pnpl-corner.bl{bottom:8px;left:8px}
+  .pnpl-frame .pnpl-corner.br{bottom:8px;right:8px}
+  .cta-pill{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;background:#F5C800;color:#0D0D0D;border-radius:999px;font-weight:700;font-size:.96rem}
+  .cta-pill svg{width:20px;height:20px;color:#0D0D0D}
+  .product-card{background:#0D0D0D;color:#fff;border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:14px}
+  .product-card .ph{aspect-ratio:1;border-radius:14px;background:#222;display:grid;place-items:center;color:#444;font-size:3rem}
+  .product-card h4{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:1.05rem;line-height:1.25;margin:0;color:#fff}
+  .product-card .price{color:rgba(255,255,255,.78);font-size:.86rem}
+  .dont{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px;display:flex;flex-direction:column;gap:8px;min-height:120px}
+  .dont::before{content:"✕";position:absolute;top:8px;left:10px;color:#dc2626;font-weight:700;font-size:1.1rem}
+  .dont .num{font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--ink-3);text-align:right}
+  .dont p{margin:0;color:var(--ink);font-size:.92rem;line-height:1.45}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="qi-logo" style="color:var(--qi-yellow)"><svg viewBox="0 0 100 100" width="34" height="34"><g fill="currentColor" transform="translate(0 -2) scale(.20887)"><path d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></g></svg></span><span><span class="brand-text" data-i18n="brand.name">Qi Brand Center</span><span class="brand-sub" data-i18n="brand.sub">Identity · Voice · System</span></span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-link" href="index.html" data-i18n="nav.foundation">Foundation</a>
+      <div class="has-dropdown"><a class="nav-link" href="identity.html">Identity <span class="chev">▾</span></a>
+        <div class="dropdown" role="menu">
+          <a href="identity.html"><span class="swatch" style="background:#4F758B"></span> Brandmark</a>
+          <a href="color.html"><span class="swatch" style="background:#F2CD00"></span> Color</a>
+          <a href="typography.html"><span class="swatch" style="background:#000"></span> Typography</a>
+          <a href="iconography.html"><span class="swatch" style="background:#00BFB3"></span> Iconography</a>
+          <a href="imagery.html"><span class="swatch" style="background:#0891B2"></span> Imagery</a>
+          <a href="graphic-device.html"><span class="swatch" style="background:#FFE76A"></span> Graphic Device</a>
+          <a href="layout.html"><span class="swatch" style="background:#EDEAE0"></span> Grids &amp; Layout</a>
+        </div>
+      </div>
+      <a class="nav-link" href="voice.html" data-i18n="nav.voice">Voice</a>
+      <a class="nav-link" href="applications.html" data-i18n="nav.applications">Applications</a>
+      <a class="nav-link active" href="pnpl.html" data-i18n="nav.pnpl">Buy Now Pay Later</a>
+      <a class="nav-link" href="compliance.html" data-i18n="nav.compliance">Compliance</a>
+      <a class="nav-link" href="admin.html" data-i18n="nav.admin">Brand&nbsp;Settings</a>
+      <a class="nav-link" href="downloads.html" data-i18n="nav.downloads">Downloads</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="lang-toggle" data-lang-toggle aria-label="Switch language">العربية</button><button class="icon-btn" data-search-open aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn" data-theme-toggle aria-label="Theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+      <a class="nav-cta" href="downloads.html">Get assets</a>
+      <button class="icon-btn menu-toggle" data-menu-toggle aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- Page head — cover page mirroring the PDF -->
+<section class="container page-head reveal" style="margin-top:24px">
+  <div>
+    <div class="crumbs"><a href="index.html">Foundation</a> / Sub-brand / Buy Now Pay Later</div>
+    <div class="eyebrow" data-i18n="page.pnpl.eyebrow">Sub-brand · قسّطها ويه كي</div>
+    <h1 class="h-display mt-12" data-i18n="page.pnpl.h1">Brand Guideline.</h1>
+    <p class="lead mt-12">The visual system for Qi's <b>Buy Now Pay Later</b> service — Arabic-first, instalment-led. One yellow Q + the Arabic wordmark <b dir="rtl">قسّطها ويه كي</b>, deployed across social, partner co-branding, print, and outdoor — with the canonical "Buy now pay later" pill CTA at every touchpoint.</p>
+    <div class="row mt-24" style="gap:10px">
+      <span class="kbd" style="font-family:'JetBrains Mono',monospace">v 1 · 2025</span>
+      <span class="kbd" style="font-family:'JetBrains Mono',monospace">24 pages</span>
+      <span class="kbd" style="font-family:'JetBrains Mono',monospace">PNPL Guidelines V1</span>
+    </div>
+  </div>
+  <div class="visual" style="background:#F5C800;display:grid;place-items:center;color:#fff;position:relative;overflow:hidden">
+    <div style="position:absolute;right:-30%;top:-15%;width:130%;aspect-ratio:1;border:2px solid rgba(255,255,255,.6);border-radius:50%"></div>
+    <div style="position:absolute;right:-15%;top:5%;width:90%;aspect-ratio:1;border:2px solid rgba(255,255,255,.6);border-radius:50%"></div>
+    <div style="position:absolute;right:8%;top:30%;width:30%;aspect-ratio:1;border:2px solid rgba(255,255,255,.6);border-radius:50%;background:rgba(255,255,255,.0)"></div>
+    <div style="position:absolute;right:6%;top:46%;width:42%;height:14%;background:transparent;border:2px solid rgba(255,255,255,.6);border-radius:999px;transform:rotate(45deg)"></div>
+    <div style="position:relative;z-index:2;color:#fff;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:clamp(1.6rem,5vw,3.4rem);line-height:1;letter-spacing:-.03em;text-align:left;padding:32px;align-self:end">
+      <div style="font-size:.6em;font-weight:600;margin-bottom:8px">Buy now</div>
+      <div style="font-size:.6em;font-weight:600;margin-bottom:24px">Pay later</div>
+      Brand<br/>Guideline
+    </div>
+  </div>
+</section>
+
+<div class="container layout-2col">
+  <aside class="toc">
+    <h4>On this page</h4>
+    <ol>
+      <li><a href="#mark" class="active">Brand mark</a></li>
+      <li><a href="#clearspace">Clear space &amp; min size</a></li>
+      <li><a href="#visual-system">Visual system</a></li>
+      <li><a href="#usage">Visual usage</a></li>
+      <li><a href="#avoid">Incorrect usage</a></li>
+      <li><a href="#social-4-5">Social · 4:5</a></li>
+      <li><a href="#social-1-1">Social · 1:1</a></li>
+      <li><a href="#partners">Partner co-branding</a></li>
+      <li><a href="#partner-posts">Partner post examples</a></li>
+      <li><a href="#offline">Non-digital channels</a></li>
+      <li><a href="#rollup">Roll-up banner</a></li>
+      <li><a href="#print">Posters &amp; flyers</a></li>
+      <li><a href="#billboards">Billboards</a></li>
+      <li><a href="#lightbox">Lightbox</a></li>
+      <li><a href="#cards">Product cards</a></li>
+      <li><a href="#cta">"Buy now pay later" CTA</a></li>
+    </ol>
+  </aside>
+
+  <div class="content">
+
+    <!-- 02 Brand Mark -->
+    <section id="mark" class="reveal">
+      <div class="eyebrow">02 — Brand mark</div>
+      <h2 class="h-1 mt-12">Yellow Q · Arabic wordmark.</h2>
+      <p class="lead mt-12">The Buy Now Pay Later mark pairs the Qi yellow icon with the Arabic wordmark <b dir="rtl">قسّطها ويه كي</b> ("Pay it in instalments with Qi"). It's a complete unit — icon + wordmark function as one indivisible lockup.</p>
+      <div class="card mt-24" style="background:#fff;color:#0D0D0D;padding:64px 32px;display:grid;place-items:center;border:1px solid var(--line)">
+        <div class="pnpl-mark">
+          <div class="word"><span>قسّطها</span><span>ويه كي</span></div>
+          <div class="q" style="color:#F5C800"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Clear Space & Minimum Size -->
+    <section id="clearspace" class="reveal mt-48">
+      <div class="eyebrow">03 — Clear space &amp; minimum size</div>
+      <h2 class="h-1 mt-12">x = the corner Qi mark.</h2>
+      <p class="lead mt-12">A mandatory empty area surrounds the full lockup. The unit of measure is <b>x</b> — the height of the small Qi mark placed at all four corners of the layout. Maintain at least <b>1×</b> on the top, bottom, left and right at all times.</p>
+      <ul style="line-height:1.9;padding-left:20px;margin-top:14px">
+        <li>The mini-Qi mark in the corners is <b>essential</b> — it cannot be removed.</li>
+        <li>The Qi icon and the Arabic wordmark behave as a <b>single visual unit</b>.</li>
+        <li>No text, image, shape, edge or design element may enter the protected clear-space.</li>
+        <li>The dot in the Qi mark = the conceptual separator between logomark and wordmark.</li>
+      </ul>
+      <div class="grid grid-2 mt-24">
+        <div class="pnpl-frame" style="background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:48px;min-height:240px;display:grid;place-items:center;position:relative">
+          <span class="pnpl-corner tl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner tr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner bl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner br"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <div class="pnpl-mark">
+            <div class="word" style="font-size:1.2rem"><span>قسّطها</span><span>ويه كي</span></div>
+            <div class="q" style="color:#F5C800;width:48px;height:48px"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg></div>
+          </div>
+        </div>
+        <div class="card"><div class="eyebrow">Rule</div><h3 class="h-3 mt-12">1× clear space minimum</h3><p class="mt-12">Top, bottom, left and right must each carry at least 1 unit of x — never less. When format allows, give it more. The four corner Qi marks anchor the protected area.</p></div>
+      </div>
+    </section>
+
+    <!-- 04 Visual System title -->
+    <section id="visual-system" class="reveal mt-48">
+      <div class="eyebrow">04 — Visual system</div>
+      <h2 class="h-1 mt-12">النظام البصري.</h2>
+      <p class="lead mt-12">The visual system unifies every BNPL touchpoint — from social posts and partner lockups to billboards and product cards — under a single Arabic-first language built on yellow, black and white.</p>
+    </section>
+
+    <!-- 05 Visual Usage -->
+    <section id="usage" class="reveal mt-48">
+      <div class="eyebrow">05 — Visual usage</div>
+      <h2 class="h-1 mt-12">Black + yellow on white.</h2>
+      <p class="lead mt-12">The primary lockup uses <b>black wordmark + yellow Qi icon</b> on a white background. Alternatives are provided so the mark can hold up against any background — always pick the variant that produces the highest contrast for legibility.</p>
+      <div class="grid grid-3 mt-24">
+        <div class="pnpl-yellow card" style="padding:36px;text-align:center"><div class="eyebrow" style="color:rgba(13,13,13,.7)">On Yellow</div><div class="h-3 mt-12" style="color:#0D0D0D">Black wordmark</div><p class="muted mt-12" style="color:#0D0D0D">Use the black logo on the yellow brand colour.</p></div>
+        <div class="pnpl-black card" style="padding:36px;text-align:center;border-color:#1c1c1c"><div class="eyebrow" style="color:#F5C800">On Black</div><div class="h-3 mt-12" style="color:#fff">Yellow + white</div><p class="muted mt-12" style="color:rgba(255,255,255,.85)">Yellow Q with white wordmark — for dark photo or solid black.</p></div>
+        <div class="pnpl-white card" style="padding:36px;text-align:center"><div class="eyebrow">On White</div><div class="h-3 mt-12">Primary lockup</div><p class="muted mt-12">Black wordmark + yellow Q. The default everywhere.</p></div>
+      </div>
+      <p class="muted mt-12">Choose the variation that gives the largest contrast against the background. On light photo backgrounds use the black version; on dark photo backgrounds, white.</p>
+    </section>
+
+    <!-- 06 Incorrect Usage — 9 don'ts -->
+    <section id="avoid" class="reveal mt-48">
+      <div class="eyebrow">06 — الاستخدام غير الصحيح</div>
+      <h2 class="h-1 mt-12">Nine things never to do.</h2>
+      <p class="lead mt-12">The Qi Installment mark must never be altered or displayed in unapproved ways. The list below covers every common misuse the team must avoid.</p>
+      <div class="grid grid-3 mt-24">
+        <div class="dont"><span class="num">01</span><p>Never change the brand colour of the mark in any unauthorised way.</p></div>
+        <div class="dont"><span class="num">02</span><p>Never rotate the mark.</p></div>
+        <div class="dont"><span class="num">03</span><p>Never tilt or distort the mark (no skew / perspective).</p></div>
+        <div class="dont"><span class="num">04</span><p>Never reposition the elements of the mark relative to each other.</p></div>
+        <div class="dont"><span class="num">05</span><p>Never change the transparency of the mark.</p></div>
+        <div class="dont"><span class="num">06</span><p>Never create a keyline (outlined) version of the mark.</p></div>
+        <div class="dont"><span class="num">07</span><p>Never violate the Clear Space rules.</p></div>
+        <div class="dont"><span class="num">08</span><p>Never add a shadow to the mark.</p></div>
+        <div class="dont"><span class="num">09</span><p>Never place the mark inside a frame or shape.</p></div>
+      </div>
+    </section>
+
+    <!-- 07 Social 4:5 -->
+    <section id="social-4-5" class="reveal mt-48">
+      <div class="eyebrow">07 — Social media · 4:5</div>
+      <h2 class="h-1 mt-12">Logo and message — diagonal.</h2>
+      <p class="lead mt-12">When a campaign carries a key promotion, the logo and the message live on opposite diagonals. <b>Logo top-left ↔ message bottom-right</b>, or <b>logo bottom-right ↔ message top-left</b>. Logo and message must always be adjacent across the diagonal — never side-by-side.</p>
+      <ul style="line-height:1.9;padding-left:20px;margin-top:14px">
+        <li>Keep the message inside the outlined Box on the bottom-right of the layout.</li>
+        <li>The four corner Qi marks must always be present.</li>
+      </ul>
+      <div class="grid grid-2 mt-24">
+        <div class="pnpl-frame card" style="background:#fff;color:#0D0D0D;padding:0;aspect-ratio:4/5;display:grid;place-items:stretch;position:relative;overflow:hidden">
+          <span class="pnpl-corner tl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner tr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner bl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner br"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <div style="padding:36px 28px"><div class="pnpl-mark"><div class="word" style="font-size:.86rem"><span>قسّطها</span><span>ويه كي</span></div><div class="q" style="color:#F5C800;width:30px;height:30px"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg></div></div></div>
+          <div style="position:absolute;bottom:48px;right:28px;text-align:right;direction:rtl;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:1.6rem;line-height:1.1;color:#0D0D0D">لحياة أسهل<br/><span style="font-size:.7em;font-weight:600">Buy now Pay later</span></div>
+        </div>
+        <div class="card"><div class="eyebrow">Rule</div><h3 class="h-3 mt-12">Logo opposite the message</h3><p class="mt-12">When the message is in the bottom-right, the logo sits in the top-left, and vice-versa. Top-right messages flip the logo to the bottom-left.</p><p class="muted mt-12">The headline always stays inside the outlined "Box" on the bottom side of the format.</p></div>
+      </div>
+    </section>
+
+    <!-- 08 Social 1:1 -->
+    <section id="social-1-1" class="reveal mt-48">
+      <div class="eyebrow">08 — Social media · 1:1</div>
+      <h2 class="h-1 mt-12">Square posts — same diagonal rule.</h2>
+      <p class="lead mt-12">For 1:1 posts (short messages, user reviews, merchant highlights) the logo lives in the bottom-left corner and the message in the top-right — or flipped, with the logo top-left and the message bottom-right.</p>
+      <div class="card mt-24" style="background:#F5C800;color:#0D0D0D;aspect-ratio:1;padding:0;position:relative;overflow:hidden;max-width:420px">
+        <span class="pnpl-corner tl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+        <span class="pnpl-corner tr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+        <span class="pnpl-corner bl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+        <span class="pnpl-corner br"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+        <div style="position:absolute;top:24px;right:24px;text-align:right;direction:rtl;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:2rem;line-height:1;color:#fff">لحياة أسهل</div>
+        <div style="position:absolute;bottom:24px;left:24px"><div class="pnpl-mark"><div class="word" style="font-size:.86rem;color:#fff"><span>قسّطها</span><span>ويه كي</span></div><div class="q" style="color:#0D0D0D;width:30px;height:30px"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg></div></div></div>
+      </div>
+    </section>
+
+    <!-- 09–10 Partner Co-branding -->
+    <section id="partners" class="reveal mt-48">
+      <div class="eyebrow">10 — Partner co-branding</div>
+      <h2 class="h-1 mt-12">Qi Installment first. 80px gap.</h2>
+      <p class="lead mt-12">When co-branded with partners — Klarna, VISA, SONY, etc. — the Qi Installment lockup always appears <b>first</b>, followed by the partner brand. The distance between the two marks is fixed at <b>X = 80&nbsp;px</b> (twice the dot in the Qi mark).</p>
+      <ul style="line-height:1.9;padding-left:20px;margin-top:14px">
+        <li>Treat each brand mark with care; both must look balanced and professional together.</li>
+        <li>Use X (the dot in the Qi mark, doubled) as the spacing unit between Qi and the partner mark.</li>
+        <li>X = <b>80&nbsp;px</b>.</li>
+        <li>This rule preserves identity, ensures correct visual sequencing, and creates a consistent visual relationship across every shared asset.</li>
+      </ul>
+      <div class="grid grid-3 mt-24">
+        <div class="card" style="display:flex;align-items:center;gap:24px;justify-content:space-between"><div class="pnpl-mark"><div class="word" style="font-size:.9rem"><span>قسّطها</span><span>ويه كي</span></div><div class="q" style="color:#F5C800;width:36px;height:36px"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg></div></div><span style="font-family:'Inter Tight',sans-serif;font-weight:800;font-size:1.4rem;color:var(--ink)">Klarna<span style="color:#F5C800">.</span></span></div>
+        <div class="card" style="display:flex;align-items:center;gap:24px;justify-content:space-between"><div class="pnpl-mark"><div class="word" style="font-size:.9rem"><span>قسّطها</span><span>ويه كي</span></div><div class="q" style="color:#F5C800;width:36px;height:36px"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg></div></div><span style="font-family:'Inter Tight',sans-serif;font-weight:800;font-size:1.4rem;letter-spacing:.04em;color:var(--ink)">VISA</span></div>
+        <div class="card" style="display:flex;align-items:center;gap:24px;justify-content:space-between"><div class="pnpl-mark"><div class="word" style="font-size:.9rem"><span>قسّطها</span><span>ويه كي</span></div><div class="q" style="color:#F5C800;width:36px;height:36px"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg></div></div><span style="font-family:'Inter Tight',sans-serif;font-weight:800;font-size:1.4rem;letter-spacing:.05em;color:var(--ink)">SONY</span></div>
+      </div>
+    </section>
+
+    <!-- 11 Partner Posts -->
+    <section id="partner-posts" class="reveal mt-48">
+      <div class="eyebrow">11–12 — Partner post examples</div>
+      <h2 class="h-1 mt-12">"كردت" · "Buy now Pay later"</h2>
+      <p class="lead mt-12">Co-branded social posts pair the lockup with a campaign headline (often the Arabic <b dir="rtl">كردت</b> "credit", paired with English "Buy now / Pay later") and the partner mark. Either logo placement is valid as long as it's diagonal to the message.</p>
+      <div class="grid grid-2 mt-24">
+        <div class="card" style="background:#E84A8E;color:#fff;aspect-ratio:1;padding:0;position:relative;overflow:hidden">
+          <span class="pnpl-corner tl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner tr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner bl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner br"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <div style="position:absolute;top:32px;right:32px;text-align:right;direction:rtl;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:3rem;color:#F5C800;letter-spacing:-.02em">كــردت</div>
+          <div style="position:absolute;bottom:24px;left:24px;display:flex;align-items:center;gap:18px"><div class="pnpl-mark"><div class="word" style="font-size:.78rem;color:#fff"><span>قسّطها</span><span>ويه كي</span></div><div class="q" style="color:#F5C800;width:28px;height:28px"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg></div></div><span style="font-family:'Inter Tight',sans-serif;font-weight:800;color:#fff;letter-spacing:.04em">VISA</span></div>
+        </div>
+        <div class="card" style="background:#0D0D0D;color:#fff;aspect-ratio:1;padding:0;position:relative;overflow:hidden">
+          <span class="pnpl-corner tl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner tr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner bl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner br"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <div style="position:absolute;top:32px;right:32px;text-align:right;direction:rtl;font-family:'Inter Tight',sans-serif;font-weight:700"><div style="color:#F5C800;font-size:1.6rem">كردت</div><div style="color:#fff;font-size:1.6rem;line-height:1.05">Buy now<br/>Pay later</div></div>
+          <div style="position:absolute;bottom:24px;left:24px;display:flex;align-items:center;gap:18px"><div class="pnpl-mark"><div class="word" style="font-size:.78rem;color:#fff"><span>قسّطها</span><span>ويه كي</span></div><div class="q" style="color:#F5C800;width:28px;height:28px"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg></div></div><span style="font-family:'Inter Tight',sans-serif;font-weight:800;color:#fff;letter-spacing:.05em">SONY</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13 Non-digital channels title -->
+    <section id="offline" class="reveal mt-48">
+      <div class="eyebrow">13 — القنوات غير الرقمية</div>
+      <h2 class="h-1 mt-12">Non-digital channels.</h2>
+      <p class="lead mt-12">For physical / printed touchpoints — roll-up banners, A4/A3 posters, billboards, lightboxes — the same visual rules apply at scale. Every format carries the four corner Qi marks, the lockup in one corner and the message in the opposite.</p>
+    </section>
+
+    <!-- 14 Roll-up banner -->
+    <section id="rollup" class="reveal mt-48">
+      <div class="eyebrow">14 — Roll-up banner</div>
+      <h2 class="h-1 mt-12">84 × 200 cm.</h2>
+      <p class="lead mt-12">Logo top-left; message centred below. Used at branch entrances, partner stores and activations.</p>
+      <div class="grid grid-2 mt-24">
+        <div class="card" style="background:#C1272D;color:#fff;aspect-ratio:.42;max-width:240px;padding:0;position:relative;overflow:hidden">
+          <span class="pnpl-corner tl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner tr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner bl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <span class="pnpl-corner br"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></span>
+          <div style="position:absolute;top:24px;left:18px;display:flex;align-items:center;gap:10px"><div class="pnpl-mark"><div class="word" style="font-size:.7rem;color:#fff"><span>قسّطها</span><span>ويه كي</span></div><div class="q" style="color:#F5C800;width:24px;height:24px"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg></div></div></div>
+          <div style="position:absolute;bottom:60px;right:0;left:0;text-align:center;font-family:'Inter Tight',sans-serif;font-weight:800;line-height:1;padding:0 14px"><div style="color:#F5C800;font-size:1.2rem;direction:rtl">لحياة أسهل</div><div style="color:#fff;font-size:1rem;margin-top:8px;line-height:1.05">Buy now<br/>Pay later</div></div>
+        </div>
+        <div class="card"><div class="eyebrow">Specs</div><table class="mono mt-12" style="font-size:.86rem;border-collapse:collapse"><tr><td style="padding:2px 24px 2px 0">Size</td><td>84 × 200 cm</td></tr><tr><td style="padding:2px 24px 2px 0">Logo</td><td>Top-left corner</td></tr><tr><td style="padding:2px 24px 2px 0">Message</td><td>Centre / lower half</td></tr><tr><td style="padding:2px 24px 2px 0">Corner marks</td><td>4 × Qi badge</td></tr></table></div>
+      </div>
+    </section>
+
+    <!-- 15 Posters & flyers -->
+    <section id="print" class="reveal mt-48">
+      <div class="eyebrow">15 — Posters &amp; flyers</div>
+      <h2 class="h-1 mt-12">A4 · A3.</h2>
+      <p class="lead mt-12">Logo top-left, message centred. Use the larger A3 format for high-traffic areas; A4 for in-branch / merchant collateral.</p>
+      <div class="grid grid-2 mt-24">
+        <div class="card"><div class="eyebrow">A4 poster</div><table class="mono mt-12" style="font-size:.86rem;border-collapse:collapse"><tr><td style="padding:2px 24px 2px 0">Size</td><td>210 × 297 mm</td></tr><tr><td style="padding:2px 24px 2px 0">Logo</td><td>Top-left</td></tr><tr><td style="padding:2px 24px 2px 0">Message</td><td>Centre / bottom</td></tr></table></div>
+        <div class="card"><div class="eyebrow">A3 poster</div><table class="mono mt-12" style="font-size:.86rem;border-collapse:collapse"><tr><td style="padding:2px 24px 2px 0">Size</td><td>297 × 420 mm</td></tr><tr><td style="padding:2px 24px 2px 0">Logo</td><td>Top-left</td></tr><tr><td style="padding:2px 24px 2px 0">Message</td><td>Centre</td></tr></table></div>
+      </div>
+    </section>
+
+    <!-- 16 Billboards -->
+    <section id="billboards" class="reveal mt-48">
+      <div class="eyebrow">16 — Billboards</div>
+      <h2 class="h-1 mt-12">70 × 30 m · 80 × 40 m.</h2>
+      <p class="lead mt-12">For mass-reach OOH (highways, city-centre billboards), use these two formats. The headline scales up to dominate the canvas; logo stays small in one corner with the four corner Qi marks bracketing the layout.</p>
+      <div class="grid grid-2 mt-24">
+        <div class="card"><div class="eyebrow">Billboard A</div><h3 class="h-3 mt-12">70 × 30 m</h3><p class="muted mt-12">Logo bottom-left, headline top-right.</p></div>
+        <div class="card"><div class="eyebrow">Billboard B</div><h3 class="h-3 mt-12">80 × 40 m</h3><p class="muted mt-12">Logo top-left, headline bottom-right (large stacked Arabic).</p></div>
+      </div>
+    </section>
+
+    <!-- 17 Lightbox -->
+    <section id="lightbox" class="reveal mt-48">
+      <div class="eyebrow">17 — لايت بوكس</div>
+      <h2 class="h-1 mt-12">Lightbox.</h2>
+      <p class="lead mt-12">Backlit storefront / mall / retail lightbox using the standard square or vertical layouts at production scale. Same lockup placement as social — logo in one corner, message diagonal to it, four corner Qi marks intact.</p>
+    </section>
+
+    <!-- 18 Product Cards -->
+    <section id="cards" class="reveal mt-48">
+      <div class="eyebrow">18 — Cards / digital product cards</div>
+      <h2 class="h-1 mt-12">Used on payment pages, sites &amp; apps.</h2>
+      <p class="lead mt-12">Product cards on dark backgrounds carry the photo, the product name, the split price ("$180.00 or 4 payments of $40.00"), the yellow <b>Buy now pay later</b> CTA, and a "more info" link.</p>
+      <div class="grid grid-2 mt-24">
+        <div class="product-card">
+          <div class="ph">👗</div>
+          <div><h4>DESIGN denim green jumpsuit in slim fit</h4><div class="price mt-12">$180.00 or 4 payments of $40.00.</div></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto;gap:14px">
+            <span class="cta-pill"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg>Buy now pay later</span>
+            <a href="#cta" style="color:rgba(255,255,255,.7);font-size:.84rem;text-decoration:underline">more info</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="ph">🧥</div>
+          <div><h4>DESIGN denim shirt jacket in slim fit navy</h4><div class="price mt-12">$160.00 or 4 payments of $40.00.</div></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto;gap:14px">
+            <span class="cta-pill"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg>Buy now pay later</span>
+            <a href="#cta" style="color:rgba(255,255,255,.7);font-size:.84rem;text-decoration:underline">more info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 19 CTA Button -->
+    <section id="cta" class="reveal mt-48">
+      <div class="eyebrow">19 — "Buy now pay later" CTA</div>
+      <h2 class="h-1 mt-12">One pill. One job.</h2>
+      <p class="lead mt-12">A yellow pill button carrying the Q icon and the words "Buy now pay later" — the canonical CTA across product cards, checkout pages, partner sites and merchant collateral. <b>Shop now. Pay later. Always interest-free.</b></p>
+      <div class="grid grid-3 mt-24">
+        <div class="card" style="background:#EAEAEA;display:grid;place-items:center;min-height:220px;padding:32px"><span class="cta-pill"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg>Buy now pay later</span></div>
+        <div class="card" style="background:#EAEAEA;padding:32px;display:flex;flex-direction:column;justify-content:space-between;min-height:220px"><div style="font-family:'Inter Tight',sans-serif;font-weight:800;font-size:1.4rem;line-height:1.05;color:#0D0D0D">Shop now.<br/>Pay later.<br/>Interest free</div><span class="cta-pill" style="align-self:flex-start"><svg viewBox="0 0 478.76 479.14"><path fill="currentColor" d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></svg>Buy now pay later</span></div>
+        <div class="card"><div class="eyebrow">Where it lives</div><ul style="line-height:1.8;padding-left:20px;margin-top:12px;font-size:.92rem"><li>Checkout pages</li><li>Partner websites &amp; apps</li><li>Social media posts</li><li>Co-branded marketing material</li></ul></div>
+      </div>
+    </section>
+
+    <p class="muted mt-48" style="font-size:.84rem">Source: PNPL Guidelines V1 · 2025-12 — pages 1–24.</p>
+  </div>
+</div>
+
+<footer class="footer"><div class="container"><div class="footer-grid">
+  <div><a class="brand" href="index.html" style="color:#fff"><span class="qi-logo" style="color:var(--qi-yellow)"><svg viewBox="0 0 100 100" width="34" height="34"><g fill="currentColor" transform="translate(0 -2) scale(.20887)"><path d="M238.07,394.25c22.74,0.17,44.36-4.61,63.88-13.26l61.71,62.67c-36.77,22.41-80.01,35.24-126.24,34.87C105.26,477.52-1.02,369.55,0.01,237.41C1.04,105.25,108.99-1.03,241.14,0.01c132.14,1.02,238.43,108.97,237.41,241.13c-0.35,44.42-12.82,85.87-34.2,121.37l-62.21-63.18c7.63-18.11,11.94-37.97,12.1-58.84c0.66-85.6-68.19-155.5-153.76-156.17c-85.61-0.68-155.52,68.16-156.19,153.76C83.64,323.66,152.47,393.58,238.07,394.25 M193.2,239.27c0,25.46,20.62,46.08,46.07,46.08c25.46,0,46.09-20.62,46.09-46.08c0-25.44-20.63-46.07-46.09-46.07C213.82,193.21,193.2,213.83,193.2,239.27 M466.94,410.26L342.8,286.12c-15.76-15.76-41.3-15.76-57.06,0c-15.75,15.76-15.75,41.31,0,57.07l124.12,124.14c15.77,15.75,41.31,15.75,57.07,0C482.71,451.55,482.71,426.02,466.94,410.26"/></g></svg></span><span><span class="brand-text" style="color:#fff">Qi Brand Center</span><span class="brand-sub" style="color:#FFE76A" data-i18n="brand.sub">Identity · Voice · System</span></span></a></div>
+  <div><h5 data-i18n="footer.identity">Identity</h5><a href="identity.html">Brandmark</a><a href="color.html">Color</a><a href="typography.html">Typography</a><a href="iconography.html">Iconography</a></div>
+  <div><h5 data-i18n="footer.system">System</h5><a href="imagery.html">Imagery</a><a href="graphic-device.html">Graphic Device</a><a href="layout.html">Grids &amp; Layout</a><a href="voice.html">Voice &amp; Tone</a></div>
+  <div><h5 data-i18n="footer.subbrand">Sub-brand &amp; Resources</h5><a href="pnpl.html">Buy Now Pay Later</a><a href="applications.html">Applications</a><a href="downloads.html">Downloads</a><a href="contact.html">Contact</a></div>
+</div><div class="legal"><div>© 2025 Qi. PNPL Brand Guidelines v1.</div><div>Press <span class="kbd">⌘</span> <span class="kbd">K</span> to search</div></div></div></footer>
+
+<div class="search-overlay"><div class="search-box"><input placeholder="Search…" /><div class="results">
+  <a href="pnpl.html"><span>Buy Now Pay Later — قسّطها ويه كي</span><span class="kbd">PNPL</span></a>
+  <a href="pnpl.html#mark"><span>BNPL brand mark</span><span class="kbd">PNPL</span></a>
+  <a href="pnpl.html#partners"><span>Partner co-branding · 80px gap</span><span class="kbd">PNPL</span></a>
+  <a href="pnpl.html#cta"><span>"Buy now pay later" CTA</span><span class="kbd">PNPL</span></a>
+  <a href="identity.html"><span>Qi brandmark</span><span class="kbd">Identity</span></a>
+</div></div></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

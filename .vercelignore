@@ -1,4 +1,4 @@
-# Skip the Next.js build artifacts and source — we serve the static HTML version on Vercel
+# Skip Next.js build artefacts and source — we deploy the static HTML
 node_modules
 .next
 out
@@ -7,7 +7,7 @@ build
 tsconfig.tsbuildinfo
 next-env.d.ts
 
-# Skip the Next.js source tree (the static .html files at root are the source of truth)
+# Skip Next.js source tree
 app
 components
 contexts
@@ -18,6 +18,8 @@ next.config.ts
 tsconfig.json
 
 # Heavy reference assets
+PNPL Guidelines_V1.pdf
+PNPL Guidelines_V1.ai
 Qi_Guidelines_v7_HR 2018.pdf
 qi-guidelines.txt
 assets/pdf-snapshots
