@@ -1649,3 +1649,40 @@ hr{border:0;height:1px;background:var(--line);margin:0}
 .style-body .sb-thumb{width:32px;height:32px;border-radius:6px;background:var(--bg-3);flex-shrink:0}
 .style-body .sb-name{flex:1;font-size:.86rem;color:var(--ink);font-weight:500}
 .style-body .sb-pct{font-family:"JetBrains Mono",monospace;font-size:.78rem;color:var(--ink-3)}
+
+/* ===========================================================
+   Bilingual (EN / AR) — RTL overrides
+   =========================================================== */
+html[dir="rtl"]{
+  font-family:"Inter Tight","Inter","Tajawal","Cairo","Helvetica Neue",Arial,system-ui,sans-serif;
+}
+html[dir="rtl"] body{text-align:right}
+html[dir="rtl"] .nav-inner{flex-direction:row-reverse}
+html[dir="rtl"] .nav-links{flex-direction:row-reverse}
+html[dir="rtl"] .nav-tools{flex-direction:row-reverse}
+html[dir="rtl"] .brand{flex-direction:row-reverse}
+html[dir="rtl"] .has-dropdown .dropdown{left:auto;right:0}
+html[dir="rtl"] .crumbs{direction:rtl}
+html[dir="rtl"] .toc ol{border-left:0;border-right:1px solid var(--line)}
+html[dir="rtl"] .toc li a{border-left:0;border-right:2px solid transparent;padding:7px 16px}
+html[dir="rtl"] .toc li a.active{border-right-color:var(--qi-yellow)}
+html[dir="rtl"] .footer-grid{direction:rtl}
+html[dir="rtl"] .legal{direction:rtl}
+html[dir="rtl"] .layout-2col{direction:rtl}
+html[dir="rtl"] .content{direction:rtl;text-align:right}
+html[dir="rtl"] .page-head{direction:rtl}
+html[dir="rtl"] .h-display,html[dir="rtl"] .h-1,html[dir="rtl"] .h-2,html[dir="rtl"] .h-3,html[dir="rtl"] .lead,html[dir="rtl"] .eyebrow{text-align:right}
+html[dir="rtl"] ol[style*="padding-left"],html[dir="rtl"] ul[style*="padding-left"]{padding-right:20px;padding-left:0}
+html[dir="rtl"] .card{direction:rtl;text-align:right}
+html[dir="rtl"] .arrow{left:18px;right:auto;transform:scaleX(-1)}
+html[dir="rtl"] .search-box .results a{flex-direction:row-reverse}
+
+/* The language-toggle pill in the nav */
+.lang-toggle{
+  display:inline-flex;align-items:center;justify-content:center;
+  height:34px;padding:0 12px;border-radius:999px;
+  border:1px solid var(--line);background:var(--surface);
+  font-family:"Inter Tight",sans-serif;font-weight:600;font-size:.78rem;
+  color:var(--ink);cursor:pointer;transition:border-color var(--t),background var(--t);
+}
+.lang-toggle:hover{border-color:var(--line-2);background:var(--bg-2)}

@@ -17,9 +17,14 @@ next-env.d.ts
 # Claude harness state (private to this machine)
 .claude/
 
+# Vercel local link
+.vercel/
+
 # Heavy reference assets — kept locally, not pushed to GitHub
 Qi_Guidelines_v7_HR 2018.pdf
 qi-guidelines.txt
+PNPL Guidelines_V1.pdf
+PNPL Guidelines_V1.ai
 assets/pdf-snapshots/
 
 # Unrelated docs that landed in the folder
@@ -34,4 +39,3 @@ yarn-error.log*
 # Tooling temp
 .cache/
 coverage/
-.vercel
