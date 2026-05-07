@@ -1,0 +1,28 @@
+# Skip the Next.js build artifacts and source — we serve the static HTML version on Vercel
+node_modules
+.next
+out
+dist
+build
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Skip the Next.js source tree (the static .html files at root are the source of truth)
+app
+components
+contexts
+lib
+package.json
+package-lock.json
+next.config.ts
+tsconfig.json
+
+# Heavy reference assets
+Qi_Guidelines_v7_HR 2018.pdf
+qi-guidelines.txt
+assets/pdf-snapshots
+ProSol-Technical-Offer*.pptx
+
+# Local
+.DS_Store
+.claude
